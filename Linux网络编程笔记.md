@@ -1,6 +1,6 @@
 # 第7章TCP网络编程基础
 
-![img](file:///C:\Users\Gyjz\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png)
+![img](./image/clip_image001.png)
 
 客户端程序设计与服务器端不同之处：客户端在套接字初始化之后可以不进行地址绑定,而是直接连接服务器端。
 
@@ -14,11 +14,11 @@ int socket(int domain, int type, int protocol);
 
 domain:设置网络通信的域，即选择通信协议的族
 
-![image-20220708133226983](C:\Users\Gyjz\AppData\Roaming\Typora\typora-user-images\image-20220708133226983.png)
+![image-20220708133226983](./image/image-20220708133226983.png)
 
 type:设置套接字通信类型
 
-![image-20220708133503198](C:\Users\Gyjz\AppData\Roaming\Typora\typora-user-images\image-20220708133503198.png)
+![image-20220708133503198](./image/image-20220708133503198.png)
 
 **protocol：**用于指定某个协议的特定类型，即type类型中的某个类型
 
@@ -138,7 +138,7 @@ size = read(s, data, 1024);
 int shutdown(int s, int how);
 ```
 
-how:![image-20220708145812839](C:\Users\Gyjz\AppData\Roaming\Typora\typora-user-images\image-20220708145812839.png)
+how:![image-20220708145812839](./image/image-20220708145812839.png)
 
 ## signal()
 
